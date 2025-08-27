@@ -3,7 +3,6 @@ import java.lang.reflect.Method;
 
 public class Reflexao {
 
-    // Lista atributos da classe e superclasses
     private static void listarAtributos(Class<?> clazz) {
         System.out.println("Atributos:");
         Class<?> atual = clazz;
@@ -15,7 +14,6 @@ public class Reflexao {
         }
     }
 
-    // Lista métodos da classe e superclasses
     private static void listarMetodos(Class<?> clazz) {
         System.out.println("\nMétodos:");
         Class<?> atual = clazz;
@@ -27,7 +25,6 @@ public class Reflexao {
         }
     }
 
-    // Ponto de entrada para analisar qualquer objeto
     public static void analisarObjeto(Object obj) {
         Class<?> clazz = obj.getClass();
         System.out.println("Classe: " + clazz.getName() + "\n");
